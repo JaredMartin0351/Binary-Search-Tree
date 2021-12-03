@@ -2,10 +2,12 @@ from node import Node
 
 
 
+from node import Node
+
+
+
 class BinarySearchTree:
     def __init__(self):
-        self.next = None
-        self.link = None
         self.head = None
         self.tail = None
         
@@ -26,12 +28,30 @@ class BinarySearchTree:
             
     def search_for_node(self, data):
         self.data = data
+        current_node = self.head
         
-        if self.data == None:
-            print('Nothing in tree')
+        if self.head == None:
+            print('list is empty')
+            return
+        while current_node != None:
+            if current_node.data == data:
+                print('node found')
+                break
+            current_node = current_node.next
         
-        elif self.data == 50:
-            print('good')
+        
+            
+        
+    
+  
+      
+        
+            
+            
+ 
+            
+            
+
             
             
 
